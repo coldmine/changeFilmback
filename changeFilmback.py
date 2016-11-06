@@ -69,7 +69,7 @@ class changeFilmback():
       
         mc.separator(height = 15, style = 'out')#############################
         
-        mc.button(label = 'change filmback size', height = 40, command = self.changeFilmback_button)
+        mc.button(label = 'change filmback size', height = 40, command = self.run)
 
         mc.separator(height = 15, style = 'out')#############################
                 
@@ -99,7 +99,7 @@ class changeFilmback():
         
         return
         
-    def changeFilmback_button(self,a):
+    def run(self,a):
         self.oriCoverageX = mc.intField('oriCoverageX', q = True, value = True)
         self.oriCoverageY = mc.intField('oriCoverageY', q = True, value = True)
 
