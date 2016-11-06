@@ -29,9 +29,9 @@ class changeFilmback():
         self.dewarpedFilmbackHeight = 0
         #################################
         
-        self.changeFilmback_UI()
+        self.display()
 
-    def changeFilmback_UI(self):
+    def display(self):
 
         self.getCam_Info()
         self.getDewarped_widthHeight()
@@ -124,5 +124,4 @@ class changeFilmback():
         return
         
 if __name__ == '__main__':
-    x = changeFilmback()
-    x.changeFilmback_UI()
+    changeFilmback().display()
